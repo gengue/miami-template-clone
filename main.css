@@ -1,0 +1,136 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.Container {
+  padding: 0;
+  margin: 0;
+}
+.Header {
+  background: transparent;
+  position: relative;
+  margin: 42px 6% 0 6%;
+  z-index: 1;
+} 
+.Header hgroup {
+  display: inline-block;
+  color: white;
+  border: 2px solid white;
+} 
+
+.Header hgroup h1, 
+.Header hgroup h2, 
+.Header hgroup h3 {
+  text-transform: uppercase;
+  margin: 5px;
+  font-family: Helvetica;
+  font-size: 35px;
+} 
+
+.Header nav {
+  display: inline-block;
+  float: right;
+}
+
+.Header nav ul li {
+  color: white;
+  display: inline-block;
+  background: transparent;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.Header nav ul li:hover > ul {
+  display: block;
+}
+
+.Header nav ul li a {
+  text-decoration: none;
+  /* color: white; */
+  color: rgba(255,255,255,0.66);
+  text-transform: uppercase;
+  font-weight: 200;
+  font-size: 11px;
+  padding: 0px 9px;
+  letter-spacing: 1px;
+  font-family: sans-serif;
+}
+
+.Header nav ul li:hover > a {
+  color: white;
+}
+
+.Nav--active{
+  color: white !important; 
+}
+
+.Header nav ul li a i {
+  font-size: 18px;
+}
+
+.Header nav ul li ul {
+  display: none;
+  position: absolute;
+  padding: 0;
+  background: rgb(34, 34, 34);
+}
+
+.Header nav ul li ul li {
+  display: block;
+  cursor: pointer;
+}
+
+.Slider {
+  background: yellow;
+  border: 1px solid black;
+  text-align: center;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.Slider-layer {
+  width: 0;
+  opacity: 0;
+}
+
+.Slider-layer img {
+  width: 100%;
+  height: 100%;
+}
+
+.Slider-layer--active {
+  display: block;
+  opacity: 1;
+  width: 100%;
+  transition: opacity 800ms ease;
+}
+.Slider-arrow {
+  position: absolute;
+  background: black;
+  color: white;
+  padding: 30px;
+  font-size: 20px;
+  top: 50%;
+  cursor: pointer;
+}
+
+.Slider-arrow-right {
+  right: 0;
+}
+
+.Slider-arrow-left {
+  left: 0;
+}
+
+.Section-Row {
+  background: blue;
+  border: 1px solid black;
+}
+.Section-Row footer{
+  background: green;
+}
+    
